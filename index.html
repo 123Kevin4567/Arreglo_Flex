@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, explicabo.">
+  <link rel="icon" href="img/favicon-2.png" type="image/png">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#">
+        <img src="img/IIsimo.png" alt="Logo" class="logo">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span class="menu-icon"></span>
+      </button>
+      <nav class="nav-container">
+        <a href="#inicio" class="enlace">Inicio</a>
+        <a href="#nosotros" class="enlace">Nosotros</a>
+        <a href="#servicios" class="enlace">Servicios</a>
+        <a href="#galeria" class="enlace">Galería</a>
+        <a href="#contacto" class="enlace">Contacto</a>
+      </nav>
+    </div>
+
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const nav = document.querySelector('.nav-container');
+        nav.classList.toggle('active');
+      });
+    </script>
+
+  </header>
+
+  
+
+  <main>
+    <section id="inicio">
+      <div class="container principal vh-100">
+        <div class="container-textos">
+          <h1 class="titulo">Bienvenidos a Tiendas Isimo</h1>
+          <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus.</p>
+          <a class="boton" href="https://tiendasisimo.com/">Vamos a empezar tu compra</a>
+        </div>
+        <img src="img/nerd.png" alt="Nerd" class="ilustracion">
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="container nosotros">
+        <img src="img/about.png" alt="Nosotros">
+        <div class="container-textos">
+          <h1 class="titulo">Nosotros</h1>
+          <p class="parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maiores quam, reprehenderit rerum excepturi et. Consequuntur odit est totam ab similique repudiandae nam?
+            <br><br>
+            Quibusdam blanditiis quia voluptates sapiente tempore error.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container servicios">
+        <div class="text-center">
+          <h2 class="titulo">Servicios</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt sit dicta perferendis ea suscipit consequuntur, provident atque? Quis hic assumenda nemo deleniti, perferendis soluta qui impedit iure non asperiores ad.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card__item">
+            <h3 class="card__plan">SUSCRIPCION</h3>
+            <h3 class="card__precio">Básica</h3>
+            <p class="parrafo card__caracteristica">Notificacion de nuevas promociones</p>
+            <p class="parrafo card__caracteristica">10% descuento cada 2 meses en carnes</p>
+            <p class="parrafo card__caracteristica">10% descuento cada 2 meses en granos</p>
+            <p class="parrafo card__caracteristica">10% descuento cada 2 meses en lacteos</p>
+            <a href="#" class="boton">Adquirir</a>
+          </div>
+
+          <div class="card__item card__item--activo">
+            <h3 class="card__plan">SUSCRIPCION</h3>
+            <h3 class="card__precio">Semi-plus</h3>
+            <p class="parrafo card__caracteristica">Notificacion de nuevos productos</p>
+            <p class="parrafo card__caracteristica">Cupon mensual de $15000 en cualquier producto</p>
+            <p class="parrafo card__caracteristica">20% descuento cada 2 meses en carnes</p>
+            <p class="parrafo card__caracteristica">20% descuento cada 2 meses en granos</p>
+            <p class="parrafo card__caracteristica">20% descuento cada 2 meses en lacteos</p>
+            <p class="parrafo card__caracteristica">Participar en regalos sorpresa</p>
+            <a href="#" class="boton boton__negro">Adquirir</a>
+          </div>
+
+          <div class="card__item">
+            <h3 class="card__plan">SUSCRIPCION</h3>
+            <h3 class="card__precio">Isimo-Plus</h3>
+            <p class="parrafo card__caracteristica">Obsequios de nuevos producto</p>
+            <p class="parrafo card__caracteristica">Cupon mensual de 30000 en cualquier producto</p>
+            <p class="parrafo card__caracteristica">30% descuento cada 2 meses en carnes</p>
+            <p class="parrafo card__caracteristica">30% descuento cada 2 meses en granos</p>
+            <p class="parrafo card__caracteristica">30% descuento cada 2 meses en lacteos</p>
+            <p class="parrafo card__caracteristica">30% descuento cada 2 meses en productos aseo</p>
+            <p class="parrafo card__caracteristica">Cupon valido para trabajar en cualuqier sucursal Isimo</p>
+            <a href="#" class="boton">Adquirir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container galeria">
+        <div class="text-center">
+          <h2 class="titulo">Galería</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt sit dicta perferendis ea suscipit consequuntur, provident atque? Quis hic assumenda nemo deleniti, perferendis soluta qui impedit iure non asperiores ad.
+          </p>
+        </div>
+        <div class="galeria-imagenes">
+          <img src="img/uno.jpg" alt="Imagen 1">
+          <img src="img/dos.jpg" alt="Imagen 2">
+          <img src="img/tres.jpg" alt="Imagen 3">
+          <img src="img/cuatro.jpg" alt="Imagen 4">
+          <img src="img/cinco.jpg" alt="Imagen 5">
+          <img src="img/seis.jpg" alt="Imagen 6">
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container contacto">
+        <div class="text-center">
+          <h2 class="titulo">Contacto</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt sit dicta perferendis ea suscipit consequuntur, provident atque? Quis hic assumenda nemo deleniti, perferendis soluta qui impedit iure non asperiores ad.
+          </p>
+          <form class="contacto-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input class="input" type="text" id="nombre">
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos</label>
+              <input class="input" type="text" id="apellidos">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input class="input" type="text" id="telefono">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input class="input" type="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="input" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="boton">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
