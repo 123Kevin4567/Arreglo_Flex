@@ -13,34 +13,41 @@
 <body>
   <header>
     <div class="container">
-      <a href="#">
-        <img src="assets/img/IIsimo.png" alt="Logo" class="logo">
-      </a>
-      <button class="menu-toggle" aria-label="Abrir menú">
-        <span class="menu-icon"></span>
-      </button>
-      <nav class="nav-container">
-        <a href="#inicio" class="enlace">Inicio</a>
-        <a href="#nosotros" class="enlace">Nosotros</a>
-        <a href="#servicios" class="enlace">Servicios</a>
-        <a href="#galeria" class="enlace">Galería</a>
-        <a href="#contacto" class="enlace">Contacto</a>
+      <nav class="nav">
+        <div class="nav__container">
+        <!-- Logo-->
+        <figure class="nav__figure">
+          <img src="assets/img/favicon.png" alt="Logo" class="nav__logo">
+        </figure>
+
+
+        <!-- Boton-->
+      <label class="nav__togle">
+       <input type="checkbox" class="nav__input">
+      </label>
+
+      <!-- Navegacion -->
+       <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#inicio" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#nosotros" class="nav__link">Nosotros</a>
+        </li>
+        <li class="nav__item">
+          <a href="#servicios" class="nav__link">Servicios</a>
+        </li>
+        <li class="nav__item">
+          <a href="#galeria" class="nav__link">Galería</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacto" class="nav__link">Contacto</a>
+        </li>
+       </ul>
+      </div>       
       </nav>
-
-      
     </div>
-
-    <script>
-      document.querySelector('.menu-toggle').addEventListener('click', function() {
-        const nav = document.querySelector('.nav-container');
-        nav.classList.toggle('active');
-      });
-    </script>
-
   </header>
-
-  
-
   <main>
     <!--Seccion prinicpal
     <section id="inicio">
