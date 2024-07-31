@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::selection {
+    background-color: coral;
+    color: var(--second-color);
+  }
+  
+  body {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    font-family: "Anton SC", sans-serif;
+  }

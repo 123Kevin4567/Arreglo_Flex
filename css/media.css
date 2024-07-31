@@ -1,0 +1,111 @@
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .enlace {
+      margin: 10px 0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .principal {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ilustracion {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .nosotros {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card__item {
+      margin-top: 50px;
+      max-width: 350px;
+      width: 30%;
+      background-color: var(--white-color);
+      color: var(--second-color);
+      align-items: center;
+      text-align: center;
+      border-radius: 40px;
+      padding: 40px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .card__item:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  
+    .galeria-imagenes img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .contacto-form {
+      width: 100%;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  
+    .input {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--main-color);
+      position: absolute;
+      top: var(--nav-height);
+      left: 0;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  
+    .nav-container.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .enlace {
+      padding: 15px;
+      text-align: center;
+      color: var(--white-color);
+    }
+  }

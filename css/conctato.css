@@ -1,0 +1,27 @@
+.contacto {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+  }
+  
+  .input {
+    padding: 12px;
+    font-size: var(--font-size);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%; 
+  }

@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    position: sticky;
+    top: 0;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
