@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .container-textos {
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-color);
+    flex-basis: 45%;
+  }
