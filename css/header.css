@@ -6,33 +6,63 @@ header {
   }
 
   .nav{
-
+    height: var(--nav-height);
   }
   
   .nav__container {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    --transform-menu-show:translate(-100%);
+    --icon-togle-menu:url(../assets/icons/open.svg);
   }
 
+  .nav__container:has(.nav__input:checked) {
+    --transform-menu-show:translate(0);
+    --icon--togle-menu:url(../assets/icons/close.svg);
+ }
 
   .nav__figure{
-
   }
 
   .nav__logo{
-
+    height: 60px;
+    width: 60px;
+    background-size: cover;
   }
 
   .nav__togle{
+      height: 60px;
+      width: 60px;
+      background-image: var(--icon-togle-menu);
+      background-size: cover;
+      cursor: pointer;
+      transition: all .5s;
+  }
 
+  .nav__togle:has(.nav__input:checked){
+    background-image: var(--icon--togle-menu);
   }
 
   .nav__input{
-
+    display: none;
   }
 
   .nav__list{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+    position: fixed;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    gap: 2rem;
+    text-align: center;
+    transition: all 0.5s;
+    list-style: none;
+    top: var(--nav-height);
+    transform: var(--transform-menu-show);
 
   }
 
@@ -41,21 +71,45 @@ header {
   }
 
   .nav__link{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1rem;
+    top: var(--nav-height);
 
   }
 
   
-  .enlace {
+  .nav__link {
     text-decoration: none;
     color: inherit;
     font-weight: 700;
     margin-right: 20px;
   }
   
-  .enlace:hover {
+  .nav__link:hover {
     background-color: var(--second-color);
     color: var(--main-color);
     padding: 15px;
     border-radius: 40px;
     transition: 0.5s;
+  }
+
+
+  @media(width>800px){
+    .nav__container{
+      display: flex;
+      --transform-menu-show:translate(0);
+    }
+    .nav__togle{
+      display: none;
+    }
+    .nav__list{
+      position: static;
+      flex-direction: row;
+      background-color: var(--main-color);
+    }
+    .nav__link{
+      color: var(--second-color);
+    }
   }
