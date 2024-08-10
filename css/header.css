@@ -3,8 +3,9 @@ header {
   color: var(--second-color);
   position: sticky;
   top: 0;
-}
+  }
 
+  
 .nav{
   height: var(--nav-height);
 }
@@ -13,6 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
   --transform-menu-show:translate(-100%);
   --icon-togle-menu:url(../assets/icons/open.svg);
 }

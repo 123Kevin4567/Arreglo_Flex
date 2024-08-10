@@ -10,10 +10,13 @@
   flex-wrap: wrap;
   gap: 20px; 
   justify-content: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .galeria-imagenes img {
   width: calc(33% - 20px);
+  border-radius: 50px;
+  max-width: 100%;
   height: auto;
-  border-radius: 5px;
 }

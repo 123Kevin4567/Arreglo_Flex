@@ -6,3 +6,8 @@
   font-weight: 400;
   margin-bottom: 100px; 
 }
+
+.nosotros img{
+  max-width: 100%;
+  height: auto;
+}
