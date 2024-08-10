@@ -1,8 +1,9 @@
 .galeria {
-  padding: 50px 0;
-  background-color: rgb(92, 219, 192); 
-  margin-bottom: 100px;
-  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
 .galeria-imagenes {
@@ -10,13 +11,12 @@
   flex-wrap: wrap;
   gap: 20px; 
   justify-content: center;
-  max-width: 100%;
-  height: auto;
 }
+
 
 .galeria-imagenes img {
   width: calc(33% - 20px);
-  border-radius: 50px;
+  border-radius: 5px;
   max-width: 100%;
   height: auto;
 }

@@ -5,14 +5,14 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-evenly;
+  gap: 20px; 
 }
 
 .card__item {
-  flex: 1 1 30%; 
-  max-width: 350px; 
+  margin-top: 50px;
+  max-width: 350px;
+  width: 30%;
   background-color: var(--Black-color);
   color: var(--second-color);
   align-items: center;
@@ -21,8 +21,6 @@
   padding: 40px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  margin: 20px 0;
-
 }
 
 .card__item:hover {
@@ -51,25 +49,10 @@
   margin-bottom: 25px;
 }
 
-
 @media (max-width: 768px) {
   .card__item {
     flex: 1 1 100%; 
     max-width: 100%; 
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .card__item {
-    padding: 20px;
-  }
-
-  .card__plan {
-    font-size: 1.5rem; 
-  }
-
-  .card__precio {
-    font-size: 2rem; 
+    margin-top: 20px; 
   }
 }

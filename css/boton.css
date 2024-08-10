@@ -19,9 +19,4 @@
 .boton__negro {
   background-color: black;
   color: var(--white-color);
-}.contacto {
-  padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
