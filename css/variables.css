@@ -1,9 +1,9 @@
 :root {
-    --main-color: #66ff00fa;
-    --second-color: #042aff;
-    --white-color: #e4e4e4;
-    --Black-color: #26cda9;
-    --font-size: 18px;
-    --max-width: 1400px;
-    --nav-height: 70px;
-  }
+  --main-color: #66ff00fa;
+  --second-color: #042aff;
+  --white-color: #e4e4e4;
+  --Black-color: #26cda9;
+  --font-size: 18px;
+  --max-width: 1400px;
+  --nav-height: 70px;
+}

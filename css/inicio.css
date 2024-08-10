@@ -1,14 +1,13 @@
 #inicio {
-    background-color: rgb(233, 252, 248);
-    border-radius: 100px;
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 100px; 
-  }
-  
-  .principal {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+  color: rgb(233, 252, 248);
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px; 
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
