@@ -43,7 +43,7 @@
   .card__item {
     margin-top: 50px;
     max-width: 350px;
-    width: 30%;
+    width: 320px;
     background-color: var(--white-color);
     color: var(--second-color);
     align-items: center;
@@ -66,7 +66,7 @@
   }
 
   .contacto-form {
-    width: 100%;
+    width: 83%;
   }
 
   .form-group {

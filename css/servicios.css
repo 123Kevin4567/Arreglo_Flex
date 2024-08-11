@@ -12,7 +12,7 @@
   .card__item {
     margin-top: 50px;
     max-width: 350px;
-    width: 310px;
+    width: 325px;
     background-color: var(--Black-color);
     color: var(--second-color);
     align-items: center;
@@ -21,6 +21,9 @@
     padding: 40px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-width: 5px;
+   border-style: solid;
+   border-color: rgb(30, 224, 208);
   }
   
   .card__item:hover {

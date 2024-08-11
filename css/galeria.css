@@ -1,9 +1,14 @@
 .galeria {
+  border-radius: 20px;
+  background-color: burlywood;
+  border-width: 6px;
+  border-style: solid;
   display: flex;
   flex-wrap: wrap;
   gap: 20px; 
   padding: 20px; 
   box-sizing: border-box; 
+  
 }
 
 .galeria-imagenes {
@@ -16,7 +21,14 @@
 
 .galeria-imagenes img {
   width: calc(33% - 20px);
-  border-radius: 5px;
+  border-radius: 50px;
   max-width: 100%;
   height: auto;
+  color: blueviolet;
+}
+
+.galeria img {
+  border-width: 8px;
+  border-style:outset;
+  border-color: rgb(168, 138, 138);
 }
